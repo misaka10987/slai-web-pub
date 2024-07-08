@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<acm>
+    <college name="Beloit College" city="Beloit" state="Wisconsin" />
+    <college name="Carleton College" city="Northfield" state="Minnesota" />
+    <college name="Coe College" city="Cedar Rapids" state="Iowa" />
+    <college name="Colorado College" city="Colorado Springs" state="Colorado" />
+    <college name="Cornell College" city="Mount Vernon" state="Iowa" />
+    <college name="Grinnell College" city="Grinnell" state="Iowa" />
+    <college name="Knox College" city="Galesburg" state="Illinois" />
+    <college name="Lake Forest College" city="Lake Forest" state="Illinois" />
+    <college name="Lawrence University" city="Appleton" state="Wisconsin" />
+    <college name="Luther College" city="Decorah" state="Iowa" />
+    <college name="Macalester College" city="Saint Paul" state="Minnesota" />
+    <college name="Monmouth College" city="Monmouth" state="Illinois" />
+    <college name="Ripon College" city="Ripon" state="Wisconsin" />
+    <college name="St. Olaf College" city="Northfield" state="Minnesota" />
+</acm>

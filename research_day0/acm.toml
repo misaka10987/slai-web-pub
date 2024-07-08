@@ -1,0 +1,71 @@
+title = "ACM member colleges"
+
+[[acm]]
+name = "Beloit College"
+city = "Beloit"
+state = "Wisconsin"
+
+[[acm]]
+name = "Carleton College"
+city = "Northfield"
+state = "Minnesota"
+
+[[acm]]
+name = "Coe College"
+city = "Cedar Rapids"
+state = "Iowa"
+
+[[acm]]
+name = "Colorado College"
+city = "Colorado Springs"
+state = "Colorado"
+
+[[acm]]
+name = "Cornell College"
+city = "Mount Vernon"
+state = "Iowa"
+
+[[acm]]
+name = "Grinnell College"
+city = "Grinnell"
+state = "Iowa"
+
+[[acm]]
+name = "Knox College"
+city = "Galesburg"
+state = "Illinois"
+
+[[acm]]
+name = "Lake Forest College"
+city = "Lake Forest"
+state = "Illinois"
+
+[[acm]]
+name = "Lawrence University"
+city = "Appleton"
+state = "Wisconsin"
+
+[[acm]]
+name = "Luther College"
+city = "Decorah"
+state = "Iowa"
+
+[[acm]]
+name = "Macalester College"
+city = "Saint Paul"
+state = "Minnesota"
+
+[[acm]]
+name = "Monmouth College"
+city = "Monmouth"
+state = "Illinois"
+
+[[acm]]
+name = "Ripon College"
+city = "Ripon"
+state = "Wisconsin"
+
+[[acm]]
+name = "St. Olaf College"
+city = "Northfield"
+state = "Minnesota"

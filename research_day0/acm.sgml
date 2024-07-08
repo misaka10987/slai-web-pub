@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<acm>
+    <college>
+        <name>Beloit College</name>
+        <city>Beloit</city>
+        <state>Wisconsin</state>
+    </college>
+    <college>
+        <name>Carleton College</name>
+        <city>Northfield</city>
+        <state>Minnesota</state>
+    </college>
+    <college>
+        <name>Coe College</name>
+        <city>Cedar Rapids</city>
+        <state>Iowa</state>
+    </college>
+    <college>
+        <name>Colorado College</name>
+        <city>Colorado Springs</city>
+        <state>Colorado</state>
+    </college>
+    <college>
+        <name>Cornell College</name>
+        <city>Mount Vernon</city>
+        <state>Iowa</state>
+    </college>
+    <college>
+        <name>Grinnell College</name>
+        <city>Grinnell</city>
+        <state>Iowa</state>
+    </college>
+    <college>
+        <name>Knox College</name>
+        <city>Galesburg</city>
+        <state>Illinois</state>
+    </college>
+    <college>
+        <name>Lake Forest College</name>
+        <city>Lake Forest</city>
+        <state>Illinois</state>
+    </college>
+    <college>
+        <name>Lawrence University</name>
+        <city>Appleton</city>
+        <state>Wisconsin</state>
+    </college>
+    <college>
+        <name>Luther College</name>
+        <city>Decorah</city>
+        <state>Iowa</state>
+    </college>
+    <college>
+        <name>Macalester College</name>
+        <city>Saint Paul</city>
+        <state>Minnesota</state>
+    </college>
+    <college>
+        <name>Monmouth College</name>
+        <city>Monmouth</city>
+        <state>Illinois</state>
+    </college>
+    <college>
+        <name>Ripon College</name>
+        <city>Ripon</city>
+        <state>Wisconsin</state>
+    </college>
+    <college>
+        <name>St. Olaf College</name>
+        <city>Northfield</city>
+        <state>Minnesota</state>
+    </college>
+</acm>

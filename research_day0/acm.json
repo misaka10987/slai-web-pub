@@ -1,0 +1,72 @@
+[
+    {
+        "name": "Beloit College",
+        "city": "Beloit",
+        "state": "Wisconsin"
+    },
+    {
+        "name": "Carleton College",
+        "city": "Northfield",
+        "state": "Minnesota"
+    },
+    {
+        "name": "Coe College",
+        "city": "Cedar Rapids",
+        "state": "Iowa"
+    },
+    {
+        "name": "Colorado College",
+        "city": "Colorado Springs",
+        "state": "Colorado"
+    },
+    {
+        "name": "Cornell College",
+        "city": "Mount Vernon",
+        "state": "Iowa"
+    },
+    {
+        "name": "Grinnell College",
+        "city": "Grinnell",
+        "state": "Iowa"
+    },
+    {
+        "name": "Knox College",
+        "city": "Galesburg",
+        "state": "Illinois"
+    },
+    {
+        "name": "Lake Forest College",
+        "city": "Lake Forest",
+        "state": "Illinois"
+    },
+    {
+        "name": "Lawrence University",
+        "city": "Appleton",
+        "state": "Wisconsin"
+    },
+    {
+        "name": "Luther College",
+        "city": "Decorah",
+        "state": "Iowa"
+    },
+    {
+        "name": "Macalester College",
+        "city": "Saint Paul",
+        "state": "Minnesota"
+    },
+    {
+        "name": "Monmouth College",
+        "city": "Monmouth",
+        "state": "Illinois"
+    },
+    {
+        "name": "Ripon College",
+        "city": "Ripon",
+        "state": "Wisconsin"
+    },
+    {
+        "name": "St. Olaf College",
+        "city": "Northfield",
+        "state": "Minnesota"
+    }
+]
