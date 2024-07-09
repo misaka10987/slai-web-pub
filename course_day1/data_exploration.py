@@ -9,4 +9,9 @@ def read_csv(filename):
         return [monster for monster in csv.DictReader(f)]
 
 
-pprint(read_csv("pokemon.csv"))
+def main():
+    pprint(read_csv("pokemon.csv"))
+
+
+if __name__ == "__main__":
+    main()
