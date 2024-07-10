@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>hello, Pokemon hunters</title>
+        <link rel="stylesheet" href={{ url_for('static', filename='css/style.css') }}>
+    </head>
+    <body>
+        <main>
+            <h1 class="title">Welcome to the Pokemon encyclopedia!</h1>
+            {% block content %}
+            {% endblock content %}
+        </main>
+    </body>
+</html>
