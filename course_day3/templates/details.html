@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block content %}
+    <div>
+        <strong>{{ data["Name"] }}</strong> is a
+        {% if data["Legendary"] == "True" %}legendary{% endif %}
+        monster!
+        {% for key, value in data.items() %}
+            <dt>{{ key }}</dt>
+            <dd>
+                {{ value }}
+            </dd>
+        {% endfor %}
+    </div>
+{% endblock content %}

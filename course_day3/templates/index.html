@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block content %}
+    {% if data %}
+        <table>
+            <thead>
+                {% for col in data[0].keys() %}<th>{{ col }}</th>{% endfor %}
+            </thead>
+            <tbody>
+                {% for monster in data %}
+                    <tr>
+                        {% for key, value in monster.items() %}
+                            {% if key == "Name" %}
+                                <td>
+                                    <a href="{{ url_for('pok_by_id', pokemon_id=monster['#']) }}">{{ value }}</a>
+                                </td>
+                            {% elif key == "Type 1" and value == "Grass" %}
+                                <td class="grass">{{ value }}</td>
+                            {% else %}
+                                <td>{{ value }}</td>
+                            {% endif %}
+                        {% endfor %}
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    {% else %}
+        <p>There are no monsters here</p>
+    {% endif %}
+{% endblock content %}
