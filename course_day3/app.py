@@ -49,16 +49,42 @@ def pok_by_id(pokemon_id: int):
     return render_template("details.html", data=data)
 
 
-def query(form: dict):
-    result = []
-    hp_min = int(form.get("hp_min", -1))
-    hp_max = int(form.get("hp_max", 1000))
-    hp_range = range(hp_min, hp_max)
-    for monster in app.data:
-        if monster["Type 1"] != form["primary_type"]:
-            continue
-        if monster["Health"] not in hp_range:
-            continue
-        result.append(monster)
+def get_or(form: dict, key: str, fallback: int) -> int:
+    res = form.get(key, fallback)
+    if not res:
+        return fallback
+    return int(res)
 
-    return result
+
+def query(form: dict):
+    hp_min, hp_max = get_or(form, "hp_min", 0), get_or(form, "hp_max", 1000)
+    hp_rng = range(hp_min, hp_max)
+    atk_min, atk_max = (
+        get_or(form, "atk_min", 0),
+        get_or(form, "atk_max", 1000),
+    )
+    atk_rng = range(atk_min, atk_max)
+    def_min, def_max = (
+        get_or(form, "def_min", 0),
+        get_or(form, "def_max", 1000),
+    )
+    def_rng = range(def_min, def_max)
+
+    def f_tp(monster):
+        return True
+
+    tp_1 = form.get("tp_1")
+    if tp_1 is not None:
+
+        def f_tp(monster):
+            return monster["Type 1"] == res
+
+    res = [
+        monster
+        for monster in app.data
+        if f_tp(monster)
+        and monster["Health"] in hp_rng
+        and monster["Attack"] in atk_rng
+        and monster["Defense"] in def_rng
+    ]
+    return res

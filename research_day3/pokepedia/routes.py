@@ -29,6 +29,6 @@ def post_index():
 def pok_by_id(pokemon_id: int):
     try:
         data = next(m for m in current_app.data if int(m["ID"]) == pokemon_id)
-    except IndexError:
+    except Exception:
         abort(404)
     return render_template("details.html", data=data)

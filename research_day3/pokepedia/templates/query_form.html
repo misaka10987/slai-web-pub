@@ -1,27 +1,27 @@
 {% extends "base.html" %}
 {% block content %}
-    <form action='{{ url_for("main.post_index") }}' method="post">
+    <form action="{{ url_for('main.post_index') }}" method="post">
         <section>
             <aside>
                 <label for="type1">Select primary type</label>
-                <select name="primary_type" id="type1">
-                    <option value="any" disabled selected>Pick one</option>
+                <select name="primary_type" id="primary_type">
+                    <option value="any" selected>Pick one</option>
                     {% for value in types %}<option value="{{ value }}">{{ value }}</option>{% endfor %}
                 </select>
                 <label for="generation">Select generation</label>
                 <select name="generation" id="generation">
-                    <option value="any" disabled selected>Pick one</option>
+                    <option value="any" selected>Pick one</option>
                     {% for value in generations %}<option value="{{ value }}">{{ value }}</option>{% endfor %}
                 </select>
                 <label for="chk_legendary">Legendary monsters only</label>
-                <input type="checkbox" name="legendary" id="chk_legendary">
+                <input type="checkbox" name="legendary" id="legendary">
             </aside>
             <aside>
                 <label for="hp_range">Health</label>
-                <input type="number" name="hp_min" min="0" max="1000">
-                <input type="number" name="hp_max" min="0" max="1000">
+                <input type="number" name="min_hp" min="0" max="1000" id="min_hp">
+                <input type="number" name="max_hp" min="0" max="1000" id="max_hp">
             </aside>
-            <input type="submit" value="Submit query">
+            <input type="submit" value="Submit query" id="btnQuery">
         </section>
     </form>
 {% endblock content %}

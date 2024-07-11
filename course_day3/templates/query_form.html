@@ -4,7 +4,7 @@
         <section>
             <aside>
                 <label for="type1">Select primary type</label>
-                <select name="primary_type" id="type1">
+                <select name="tp_1" id="type1">
                     <option value="any" disabled selected>Pick one</option>
                     {% for value in types %}<option value="{{ value }}">{{ value }}</option>{% endfor %}
                 </select>
@@ -18,8 +18,14 @@
             </aside>
             <aside>
                 <label for="hp_range">Health</label>
-                <input type="number" name="hp_min" min="0" max="1000">
-                <input type="number" name="hp_max" min="0" max="1000">
+                <input type="number" name="hp_min" min="0" max="1000" default="0">
+                <input type="number" name="hp_max" min="0" max="1000" default="1000">
+                <label for="atk_rng">Attack</label>
+                <input type="number" name="atk_min" min="0" max="1000">
+                <input type="number" name="atk_max" min="0" max="1000">
+                <label for="def_rng">Defense</label>
+                <input type="number" name="def_min" min="0" max="1000">
+                <input type="number" name="def_max" min="0" max="1000">
             </aside>
             <input type="submit" value="Submit query">
         </section>
