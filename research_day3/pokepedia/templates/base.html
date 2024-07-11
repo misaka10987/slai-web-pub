@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://unpkg.com/mvp.css">
+        <link rel="stylesheet"
+              href="{{ url_for('static', filename='css/style.css') }}">
+        <title>
+            {% block title %}
+                {% if name %}
+                    {{ name }}
+                {% else %}
+                    Pokemon stats
+                {% endif %}
+            {% endblock title %}
+        </title>
+        <style></style>
+    </head>
+    <body>
+        <nav>
+            Home
+        </nav>
+        <section id="main_section">
+            {% block content %}
+            {% endblock content %}
+        </section>
+    </body>
+</html>
