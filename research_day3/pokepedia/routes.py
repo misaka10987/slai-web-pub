@@ -28,7 +28,7 @@ def post_index():
 @main.route("/<int:pokemon_id>")
 def pok_by_id(pokemon_id: int):
     try:
-        data = next(m for m in current_app.data if int(m["ID"]) == pokemon_id)
+        data = [m for m in current_app.data if int(m["ID"]) == pokemon_id][0]
     except IndexError:
         abort(404)
     return render_template("details.html", data=data)
