@@ -1,3 +1,27 @@
 {% extends "base.html" %}
 {% block content %}
+    <form action='{{ url_for("post_index") }}' method="post">
+        <section>
+            <aside>
+                <label for="type1">Select primary type</label>
+                <select name="primary_type" id="type1">
+                    <option value="any" disabled selected>Pick one</option>
+                    {% for value in types %}<option value="{{ value }}">{{ value }}</option>{% endfor %}
+                </select>
+                <label for="generation">Select generation</label>
+                <select name="generation" id="generation">
+                    <option value="any" disabled selected>Pick one</option>
+                    {% for value in generations %}<option value="{{ value }}">{{ value }}</option>{% endfor %}
+                </select>
+                <label for="chk_legendary">Legendary monsters only</label>
+                <input type="checkbox" name="legendary" id="chk_legendary">
+            </aside>
+            <aside>
+                <label for="hp_range">Health</label>
+                <input type="number" name="hp_min" min="0" max="1000">
+                <input type="number" name="hp_max" min="0" max="1000">
+            </aside>
+            <input type="submit" value="Submit query">
+        </section>
+    </form>
 {% endblock content %}

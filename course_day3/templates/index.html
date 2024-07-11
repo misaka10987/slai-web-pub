@@ -11,7 +11,7 @@
                         {% for key, value in monster.items() %}
                             {% if key == "Name" %}
                                 <td>
-                                    <a href="{{ url_for('pok_by_id', pokemon_id=monster['#']) }}">{{ value }}</a>
+                                    <a href="{{ url_for('pok_by_id', pokemon_id=monster['ID']) }}">{{ value }}</a>
                                 </td>
                             {% elif key == "Type 1" and value == "Grass" %}
                                 <td class="grass">{{ value }}</td>

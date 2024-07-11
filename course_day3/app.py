@@ -33,8 +33,11 @@ def get_index():
 
 @app.post("/")
 def post_index():
+    print(request.form)
     if request.form:
         return render_template("index.html", data=query(dict(request.form)))
+    else:
+        return "What?!"
 
 
 @app.route("/<int:pokemon_id>")
@@ -46,4 +49,16 @@ def pok_by_id(pokemon_id: int):
     return render_template("details.html", data=data)
 
 
-def query(form: dict): ...
+def query(form: dict):
+    result = []
+    hp_min = int(form.get("hp_min", -1))
+    hp_max = int(form.get("hp_max", 1000))
+    hp_range = range(hp_min, hp_max)
+    for monster in app.data:
+        if monster["Type 1"] != form["primary_type"]:
+            continue
+        if monster["Health"] not in hp_range:
+            continue
+        result.append(monster)
+
+    return result
