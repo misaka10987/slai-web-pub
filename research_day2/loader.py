@@ -8,15 +8,15 @@ class Pokemon:
         self.name = keymap["Name"]
         self.type_1 = keymap["Type 1"]
         self.type_2 = keymap["Type 2"]
-        self.total = keymap["Total"]
-        self.hp = keymap["HP"]
-        self.attack = keymap["Attack"]
-        self.defense = keymap["Defense"]
-        self.sp_atk = keymap["Sp. Atk"]
-        self.sp_def = keymap["Sp. Def"]
-        self.speed = keymap["Speed"]
-        self.generation = keymap["Generation"]
-        self.legendary = keymap["Legendary"]
+        self.total = int(keymap["Total"])
+        self.hp = int(keymap["HP"])
+        self.attack = int(keymap["Attack"])
+        self.defense = int(keymap["Defense"])
+        self.sp_atk = int(keymap["Sp. Atk"])
+        self.sp_def = int(keymap["Sp. Def"])
+        self.speed = int(keymap["Speed"])
+        self.generation = int(keymap["Generation"])
+        self.legendary = keymap["Legendary"] == "True"
         pass
 
 
