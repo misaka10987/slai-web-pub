@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% block head %}
+  <title>{{ element.Element }}</title>
+{% endblock %}
+{% block body %}
+  <div class="container">
+    <h1>{{ element.Element }}</h1>
+    <section>
+      <div>
+        {% for key, value in element.items() %}
+          <dt>{{ key }}</dt>
+          <dd>
+            {% if value %}
+              {{ value }}
+            {% else %}
+              N/A
+            {% endif %}
+          </dd>
+        {% endfor %}
+      </div>
+    </section>
+  </div>
+{% endblock %}

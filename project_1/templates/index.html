@@ -1,9 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Hello</title>
-    </head>
-    <body>This page is intentionally left blank.</body>
-</html>
+{% extends 'base.html' %}
+{% block head %}
+  <title>Element Periodic Table Explorer</title>
+{% endblock %}
+{% block body %}
+  <div class="container">
+    <article>
+      <h1>Welcome to the <b>Element Periodic Table Explorer</b> !</h1>
+      <section class="section">
+        <p>
+          Use <code>/${atomic_number}</code> for detailed element information
+        </p>
+        <p>
+          Use <a href="/table"><code>/table</code></a> for the whole element table
+        </p>
+      </section>
+    </article>
+  </div>
+{% endblock %}
