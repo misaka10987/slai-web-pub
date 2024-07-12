@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Go away linter">
+        <meta name="keywords" content="Go, away, linter">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Final app</title>
+        <link rel="stylesheet" href="https://unpkg.com/mvp.css">
+    </head>
+    <body>
+        <form action="/upload" method="post" enctype="multipart/form-data">
+            <input type="file" name="file">
+            <input type="submit" value="Upload">
+        </form>
+        {% if data %}
+            <table>
+                <thead>
+                    {% for col in data.fieldnames %}<th>{{ col }}</th>{% endfor %}
+                </thead>
+                <tbody>
+                    {% for row in data %}
+                        <tr>
+                            {% for value in row.values() %}<td>{{ value }}</td>{% endfor %}
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        {% endif %}
+    </body>
+</html>
