@@ -10,6 +10,8 @@ def query(form: dict):
     for monster in current_app.data:
         if monster["Type 1"] != form["primary_type"]:
             continue
+        if monster["Generation"] != form["generation"]:
+            continue
         if monster["Health"] not in hp_range:
             continue
         result.append(monster)
