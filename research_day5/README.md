@@ -1,4 +1,4 @@
-# Day 6. SQL
+# Day 5. SQL
 
 SQL is a powerful data manipulation language.
 
