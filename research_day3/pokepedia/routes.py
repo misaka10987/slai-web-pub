@@ -18,7 +18,6 @@ def get_index():
 
 @main.post("/")
 def post_index():
-    print(request.form)
     if request.form:
         return render_template("index.html", data=query(dict(request.form)))
     else:

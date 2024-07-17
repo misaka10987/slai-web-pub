@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Routes testing
+Logic testing
 
 @authors: Roman Yasinovskyy
 @version: 2024.7
