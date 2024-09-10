@@ -18,11 +18,12 @@ def create_app():
     app.config.from_prefixed_env()
     ...
     # TODO: Countries to use in the `dl_countries`
-    app.countries = []
+    app.countries = read_db("SELECT DISTINCT code2,name FROM country")
     # TODO: Regions to use in the `select_region`
-    app.regions = []
+    app.regions = read_db("SELECT DISTINCT subregion FROM country")
     # TODO: Continents to use in the `select_continent`
-    app.continents = []
+    app.continents = read_db("SELECT DISTINCT continental_region FROM country")
+
     from geography.routes import main
 
     app.register_blueprint(main)

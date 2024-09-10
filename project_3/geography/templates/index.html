@@ -25,13 +25,12 @@
                             Pick a country
                             <input list="dl_countries" name="country" id="country">
                             <datalist id="dl_countries">
-                                {% for code2, country in countries %}<option value="{{ country }}"></option>{% endfor %}
+                                {% for code2, country in countries %}
+                                <option value="{{ country }}"></option>
+                                {% endfor %}
                             </datalist>
                         </label>
-                        <button type="submit"
-                                id="button_country_query"
-                                name="country_query"
-                                class="normal">Get country info</button>
+                        <button type="submit" id="button_country_query" class="normal">Get country info</button>
                     </form>
                 </div>
                 <div class="dropdown">
@@ -44,7 +43,6 @@
                         </label>
                         <button type="submit"
                                 id="button_region_query"
-                                name="region_query"
                                 class="success">Get region info</button>
                     </form>
                 </div>
@@ -60,7 +58,6 @@
                         </label>
                         <button type="submit"
                                 id="button_continent_query"
-                                name="continent_query"
                                 class="warning">Get continent info</button>
                     </form>
                 </div>
